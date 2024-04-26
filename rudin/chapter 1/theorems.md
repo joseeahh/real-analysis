@@ -15,3 +15,5 @@ Our second goal is to show that $\alpha = \inf(B)$. This devolves into showing t
 * To show that it is the greatest lower bound, suppose some $\beta \in S$ such that $\alpha < \beta$. Since $\alpha$ is an upper bound of $L$, then $\beta \not \in L$ so that $\beta$ is not a lower bound of $B$.
 
 Then $\alpha = \inf(B)$, and $\inf(B) \in S$. Hence, $S$ has the **greatest lower bound property**.
+
+## Theorem 1.20 - Archimedian Property of $\mathbb R$, Density of $\mathbb Q$ in $\mathbb R$
