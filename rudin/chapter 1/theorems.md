@@ -20,6 +20,6 @@ Then $\alpha = \inf(B)$, and $\inf(B) \in S$. Hence, $S$ has the **greatest lowe
 2. If $x, y \in \mathbb R$ where $x < y$, there then exists some $q \in \mathbb Q$ such that $x < q < y$.
 
 _Proof:_
-1. Define the set $A = `\{nx : n \in \mathbb N\}`$. Assume, for contradiction, that $A$ is bounded above. Since $\mathbb R$ has the least-upper-bound property, we may put $\alpha = \sup(A)$. Since $x > 0$, then $\alpha - x < \alpha$ so that $\alpha - x$ is not an upper bound of $A$. Then $\alpha - x < mx$ for some $m \in \mathbb N$. But then $\alpha < (m + 1)x \in A$, since $m + 1 \in \mathbb N$, contradicting that $A$ is bounded above.
+1. Define the set $A =$ $`\{nx : n \in \mathbb N\}`$. Assume, for contradiction, that $A$ is bounded above. Since $\mathbb R$ has the least-upper-bound property, we may put $\alpha = \sup(A)$. Since $x > 0$, then $\alpha - x < \alpha$ so that $\alpha - x$ is not an upper bound of $A$. Then $\alpha - x < mx$ for some $m \in \mathbb N$. But then $\alpha < (m + 1)x \in A$, since $m + 1 \in \mathbb N$, contradicting that $A$ is bounded above.
 2. Because $x < y$, then $0 < y - x$. By 1, there exists some $n \in \mathbb N$ such that
    $$n(y - x) > 1$$
