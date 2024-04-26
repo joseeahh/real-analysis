@@ -43,4 +43,12 @@ _Proof:_ If there was another $y_0$ such that $y_0^n = x$, then it must be that 
   Then $0 < t < 1 \implies t^n \leq t < x$ so that $t \in E$.
 * If $t > 1 + x > x$, then $t^n \geq t > x$ so that $1 + x$ serves as an upper bound of $E$.
 
-By the least-upper-bound property of $\mathbb R$, $\sup(E)$ exists; call it $y$. To prove that $y^n = x$, we must show that it is not possible for $y^n < x$ nor $y^n > x$. For the first,
+By the least-upper-bound property of $\mathbb R$, $\sup(E)$ exists; call it $y$. To prove that $y^n = x$, we must show that it is not possible for $y^n < x$ nor $y^n > x$. We first use an algebraic identity: For $0 < a< b$, we have that
+$$b^n - a^n = (b - a)(b^{n - 1} + ab^{n - 2} + \cdots + a^{n - 1}) \implies b^n - a^n < (b - a)nb^{n - 1}$$
+where the proof is given here. 
+
+Suppose now that $y^n < x$. Pick some $h$ such that $0 < h < 1$, and
+$$h < \frac{x - y^n}{n(y + 1)^{n - 1}}
+Putting $a = y$ and $b = y + h$, we have
+$$(y + h)^n - y^n < (y + h - y)n(y + h)^{n - 1} < hn(y + 1)^{n - 1} < x - y^n$$
+Then $(y + h) \in E$, but $y + h > y$, contradicting that $y$ is an upper bound of $E$. If we suppose now that $y^n > x$, we have
