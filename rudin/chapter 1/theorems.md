@@ -31,3 +31,16 @@ _Proof:_
    $$nx < t \leq nx + 1 < ny$$
    Since $n(y - x) > 1 > 0$, and $(y - x) > 0$, then $n > 0$, and it follows that
    $$x < \frac tn < y$$
+
+## Theorem 1.21 - Existence of $n$th Roots
+For every $x \in \mathbb R^+$ and $n \in \mathbb N$, there exists one and only one $y \in \mathbb R^+$ such that $y^n = x$. We denote this as $y = \sqrt[n]x$ or $y = x^{1/n}$.
+
+_Proof:_ If there was another $y_0$ such that $y_0^n = x$, then it must be that either $y_0 < y$ or $y_0 > y$. However, since $0 < a < b \implies 0 < a^n < b^n$ (which is trivial to prove by induction), then no such $y_0$ can exist. Now, let $E = $ $`\{t \in \mathbb R^+ : t^n < x\}`$. Our goal is to show that $E$ is not empty and is bounded above, so that we may invoke the least-upper-bound property of $\mathbb R$ and prove the existence of $\sup(E)$. To that end, consider the following:
+* Since $x > 0$, then $x + 1 > 0$ so that $t = \frac{x}{x + 1} > 0$. Similarly, it follows that
+  $$x > 0 \implies x^2 > 0 \implies x^2 + x > x \implies x > \frac{x}{x + 1}$$
+  Additionally, we have that
+  $$x^{n - 1} \leq (x + 1)^{n - 1} \implies (x + 1)x^n \leq x(x + 1)^n \implies \left(\frac{x}{x + 1}\right)^n \leq \frac{x}{x + 1}$$
+  Then $0 < t < 1 \implies t^n \leq t < x$ so that $t \in E$.
+* If $t > 1 + x > x$, then $t^n \geq t > x$ so that $1 + x$ serves as an upper bound of $E$.
+
+By the least-upper-bound property of $\mathbb R$, $\sup(E)$ exists; call it $y$. To prove that $y^n = x$, we must show that it is not possible for $y^n < x$ nor $y^n > x$. For the first,
