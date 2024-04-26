@@ -32,7 +32,7 @@ _Proof:_
    Since $n(y - x) > 1 > 0$, and $(y - x) > 0$, then $n > 0$, and it follows that
    $$x < \frac tn < y$$
 
-## Theorem 1.21 - Existence of $n$th Roots
+## Theorem 1.21 - Existence of $n$ th Roots
 For every $x \in \mathbb R^+$ and $n \in \mathbb N$, there exists one and only one $y \in \mathbb R^+$ such that $y^n = x$. We denote this as $y = \sqrt[n]x$ or $y = x^{1/n}$.
 
 _Proof:_ If there was another $y_0$ such that $y_0^n = x$, then it must be that either $y_0 < y$ or $y_0 > y$. However, since $0 < a < b \implies 0 < a^n < b^n$ (which is trivial to prove by induction), then no such $y_0$ can exist. Now, let $E = $ $`\{t \in \mathbb R^+ : t^n < x\}`$. Our goal is to show that $E$ is not empty and is bounded above, so that we may invoke the least-upper-bound property of $\mathbb R$ and prove the existence of $\sup(E)$. To that end, consider the following:
