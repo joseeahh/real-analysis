@@ -21,5 +21,13 @@ Then $\alpha = \inf(B)$, and $\inf(B) \in S$. Hence, $S$ has the **greatest lowe
 
 _Proof:_
 1. Define the set $A =$ $`\{nx : n \in \mathbb N\}`$. Assume, for contradiction, that $A$ is bounded above. Since $\mathbb R$ has the least-upper-bound property, we may put $\alpha = \sup(A)$. Since $x > 0$, then $\alpha - x < \alpha$ so that $\alpha - x$ is not an upper bound of $A$. Then $\alpha - x < mx$ for some $m \in \mathbb N$. But then $\alpha < (m + 1)x \in A$, since $m + 1 \in \mathbb N$, contradicting that $A$ is bounded above.
-2. Because $x < y$, then $0 < y - x$. By 1, there exists some $n \in \mathbb N$ such that
+2. Because $x < y$, then $0 < y - x$. By (1), there exists some $n \in \mathbb N$ such that
    $$n(y - x) > 1$$
+   We then use (1) again to furnish integers $r$ and $s$ such that $nx < r$ and $s> -nx \implies -s < nx$. Then the following relation holds
+   $$-s < nx < r$$
+   By the properties of $\mathbb Z$, there exists some $t$ such that $-s \leq t \leq r$. Then
+   $$t - 1 \leq nx < t$$
+   where $t - 1 \leq nx$, since it may be the case that $nx$ is an integer. Then $t \leq nx + 1$, and
+   $$nx < t \leq nx + 1 < ny$$
+   Since $n(y - x) > 1 > 0$, and $(y - x) > 0$, then $n > 0$, and it follows that
+   $$x < \frac tn < y$$
