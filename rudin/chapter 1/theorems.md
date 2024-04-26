@@ -6,7 +6,7 @@ Suppose $S$ is an ordered set with the least-upper-bound property, $B \subset S$
 $$\alpha = \sup(L)$$
 exists in $S$, and $\alpha = \inf(B)$. In particular, $\inf(B) \in S$.
 
-_Proof:_ Our first goal is to show that $\sup(L)$ exists. Since $S$ has the least-upper-bound property, this defaults to showing that $L$ is not empty and is bounded above. Since $B$ is bounded below, then it has a lower bound. Then $L$ is not empty. By definition, $`\{\ell \in S : \forall b \in B, \ell \leq b\}`$. Then every element of $B$ serves as an upper bound of every element in $L$. Then $L$ is bounded above. It then follows that $\sup(L)$ exists in $S$; call it $\alpha$.
+_Proof:_ Our first goal is to show that $\sup(L)$ exists. Since $S$ has the least-upper-bound property, this defaults to showing that $L$ is not empty and is bounded above. Since $B$ is bounded below, then it has a lower bound. Then $L$ is not empty. By definition, $L=$ $`\{\ell \in S : \forall b \in B, \ell \leq b\}`$. Then every element of $B$ serves as an upper bound of every element in $L$. Then $L$ is bounded above. It then follows that $\sup(L)$ exists in $S$; call it $\alpha$.
 
 Our second goal is to show that $\alpha = \inf(B)$. This devolves into showing that $\alpha \in L$, and it is the greatest lower bound. 
 * Suppose, for contradiction, that $b < \alpha$ for some $b \in B$. Then $b$ is not an upper bound of $L$. This contradicts that every element of $B$ is an upper bound of $L$. It must be that $\alpha \leq b$. Then $\alpha$ is a lower bound of $B$, and $\alpha \in L$.
